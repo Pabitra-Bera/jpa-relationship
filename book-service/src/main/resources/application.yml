@@ -14,12 +14,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
-  servlet:
-    multipart:
-      enabled: 'true'
-      fileSizeThreshold: 2KB #after the fileSizeThreshold size file will be saved
-      maxFileSize: 15MB
-      maxRequestSize: 15MB
   h2:
     console:
       enabled: true
