@@ -1,0 +1,33 @@
+    Get all books: GET /books
+    Get book by ID: GET /books/{id}
+    Create a new book: POST /books
+    Update an existing book: PUT /books/{id}
+    Delete a book: DELETE /books/{id}
+    Search for books by title: GET /books?title={title}
+    Search for books by author: GET /books?author={author}
+    Search for books by genre: GET /books?genre={genre}
+    Purchase a book: POST /books/{id}/purchase
+    Get purchase history for a user: GET /users/{userId}/purchases
+    Add a book evaluation: POST /books/{id}/evaluations
+    Get book evaluations: GET /books/{id}/evaluations
+    Add a discussion topic: POST /books/{id}/discussions
+    Get book discussion topics: GET /books/{id}/discussions
+    Add a comment to a discussion topic: POST /discussions/{id}/comments
+    Get comments for a discussion topic: GET /discussions/{id}/comments
+
+
+    ========================================================================
+        GET /api/books: Get a list of all books.
+        POST /api/books: Create a new book.
+        GET /api/books/{id}: Get a specific book by ID.
+        PUT /api/books/{id}: Update a specific book by ID.
+        DELETE /api/books/{id}: Delete a specific book by ID.
+        GET /api/books/search?title={title}&author={author}&genre={genre}: Search for books by title, author, or genre.
+        GET /api/books/{id}/reviews: Get a list of reviews for a specific book by ID.
+        POST /api/books/{id}/reviews: Add a review for a specific book by ID.
+        GET /api/books/{id}/discussions: Get a list of discussions for a specific book by ID.
+        POST /api/books/{id}/discussions: Add a discussion for a specific book by ID.
+        GET /api/users/{userId}/purchases: Get a list of purchases for a specific user by ID.
+        POST /api/users/{userId}/purchases: Add a new purchase for a specific user by ID.
+        GET /api/users/{userId}/reviews: Get a list of book reviews submitted by a specific user by ID.
+        GET /api/users/{userId}/discussions: Get a list of book discussions participated in by a specific user by ID.
